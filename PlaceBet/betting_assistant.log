@@ -1,0 +1,592 @@
+2026-09-29 22:10:58,087 - __main__ - ERROR - Error in main application: EOF when reading a line
+2026-09-29 22:10:58,090 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\Code\scrapping-tool-\PlaceBet\main.py", line 462, in run
+    if not self.run_setup_wizard():
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Code\scrapping-tool-\PlaceBet\main.py", line 49, in run_setup_wizard
+    self._get_odds_preferences()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Code\scrapping-tool-\PlaceBet\main.py", line 73, in _get_odds_preferences
+    min_odds = float(input("Minimum odds (e.g., 1.20): ").strip())
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+
+2026-09-29 22:15:19,716 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:15:22,472 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:15:33,048 - odds_provider - INFO - Found 40 elements with selector: div[class*="event"]
+2026-09-29 22:15:33,286 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:24:18,633 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:24:18,634 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:24:19,734 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-29 22:24:20,274 - WDM - INFO - There is no [win64] chromedriver "153.0.8010.52" for browser google-chrome "153.0.8010" in cache
+2026-09-29 22:24:20,757 - WDM - INFO - There is no [win64] chromedriver "153.0.8010.52" for browser google-chrome "153.0.8010" in cache
+2026-09-29 22:24:20,757 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-29 22:24:22,187 - WDM - INFO - WebDriver version 153.0.8010.52 selected
+2026-09-29 22:24:22,200 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/153.0.8010.52/win64/chromedriver-win64.zip
+2026-09-29 22:24:22,200 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/153.0.8010.52/win64/chromedriver-win64.zip
+2026-09-29 22:24:23,464 - WDM - INFO - Driver downloading response is 200
+2026-09-29 22:24:34,017 - WDM - INFO - Driver has been saved in cache [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52]
+2026-09-29 22:24:35,394 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:24:47,145 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 22:24:47,954 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 22:24:47,966 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 22:24:47,966 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:24:50,112 - odds_provider - INFO - Using manual odds input mode
+2026-09-29 22:29:54,908 - __main__ - INFO - User cancelled the operation
+2026-09-29 22:30:26,268 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:30:26,269 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:30:26,861 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 22:30:27,350 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:30:34,527 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 22:30:35,405 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 22:30:35,418 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 22:30:35,418 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:30:37,582 - odds_provider - INFO - Using manual odds input mode
+2026-09-29 22:33:48,824 - __main__ - INFO - User cancelled the operation
+2026-09-29 22:34:30,001 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:34:30,002 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:34:30,605 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 22:34:31,058 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:34:31,253 - odds_provider - ERROR - Error fetching odds from BetPawa: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=153.0.8010.53)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff610301035+5a95]
+	chromedriver!(No symbol) [0x7ff610222c70]
+	chromedriver!(No symbol) [0x7ff610044a7d]
+	chromedriver!(No symbol) [0x7ff61004186b]
+	chromedriver!(No symbol) [0x7ff610031da1]
+	chromedriver!(No symbol) [0x7ff610033be4]
+	chromedriver!(No symbol) [0x7ff610032334]
+	chromedriver!(No symbol) [0x7ff610031b0b]
+	chromedriver!(No symbol) [0x7ff6100317c1]
+	chromedriver!(No symbol) [0x7ff61002f490]
+	chromedriver!(No symbol) [0x7ff61002fc02]
+	chromedriver!(No symbol) [0x7ff610048d67]
+	chromedriver!(No symbol) [0x7ff6100f0994]
+	chromedriver!(No symbol) [0x7ff6100c93ea]
+	chromedriver!(No symbol) [0x7ff6100efbea]
+	chromedriver!(No symbol) [0x7ff610091d02]
+	chromedriver!(No symbol) [0x7ff610092b13]
+	chromedriver!GetHandleVerifier [0x7ff610721411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff61074ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff61074094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff6103fbf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff610230a05]
+	chromedriver!(No symbol) [0x7ff61022bcf4]
+	chromedriver!(No symbol) [0x7ff61022be84]
+	chromedriver!(No symbol) [0x7ff6102166ac]
+	KERNEL32!BaseThreadInitThunk [0x7ffecd16257d+1d]
+	ntdll!RtlUserThreadStart [0x7ffecedcaf08+28]
+
+2026-09-29 22:34:33,346 - odds_provider - INFO - Using manual odds input mode with sample data
+2026-09-29 22:34:33,350 - selector - INFO - Filtering 10 fixtures
+2026-09-29 22:34:33,351 - selector - INFO - Found 0 qualifying selections
+2026-09-29 22:38:41,489 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:38:41,490 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:38:42,226 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 22:38:42,699 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:38:51,079 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 22:38:51,860 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 22:38:51,873 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 22:38:51,873 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:38:54,005 - odds_provider - INFO - Using manual odds input mode
+2026-09-29 22:41:02,644 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:41:02,645 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:41:03,226 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 22:41:03,688 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:41:11,619 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 22:41:12,485 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 22:41:12,498 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 22:41:12,498 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:41:14,663 - odds_provider - INFO - Using manual odds input mode
+2026-09-29 22:59:11,330 - __main__ - INFO - User cancelled the operation
+2026-09-29 22:59:39,489 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 22:59:39,489 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 22:59:40,119 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 22:59:40,648 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 22:59:52,976 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 22:59:53,817 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 22:59:53,830 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 22:59:53,830 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 22:59:55,928 - odds_provider - INFO - Using manual odds input mode
+2026-09-29 23:03:44,202 - __main__ - INFO - User cancelled the operation
+2026-09-29 23:04:03,984 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:04:03,984 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:04:04,589 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:04:05,225 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:04:16,580 - odds_provider - INFO - Found 40 elements with selector: //div[contains(@class, 'event')]
+2026-09-29 23:04:17,432 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@class, 'match')]
+2026-09-29 23:04:17,444 - odds_provider - INFO - Found 0 elements with selector: //div[contains(@data-test, 'event')]
+2026-09-29 23:04:17,444 - odds_provider - INFO - Successfully extracted 0 fixtures
+2026-09-29 23:04:19,567 - odds_provider - INFO - Using sample data automatically
+2026-09-29 23:04:19,571 - selector - INFO - Filtering 15 fixtures
+2026-09-29 23:04:19,572 - selector - INFO - Found 17 qualifying selections
+2026-09-29 23:04:19,575 - combinations - INFO - Generating combinations from 17 selections
+2026-09-29 23:04:19,576 - combinations - INFO - Target payout: 4000000.0, Stake: 1000.0
+2026-09-29 23:04:19,576 - combinations - INFO - Trying combinations of 1 matches
+2026-09-29 23:04:19,577 - combinations - INFO - Trying combinations of 2 matches
+2026-09-29 23:04:19,578 - combinations - INFO - Trying combinations of 3 matches
+2026-09-29 23:04:19,582 - combinations - INFO - Trying combinations of 4 matches
+2026-09-29 23:04:19,593 - combinations - INFO - Trying combinations of 5 matches
+2026-09-29 23:04:19,596 - combinations - INFO - Found valid combination with 5 matches, payout: 4826250.00
+2026-09-29 23:04:19,597 - combinations - INFO - Found valid combination with 5 matches, payout: 4290000.00
+2026-09-29 23:04:19,597 - combinations - INFO - Found valid combination with 5 matches, payout: 4075500.00
+2026-09-29 23:04:19,610 - combinations - INFO - Found 3 combinations with 5 matches
+2026-09-29 23:05:27,850 - betpawa_interface - INFO - Preparing BetPawa for manual placement with Selenium
+2026-09-29 23:05:27,856 - odds_provider - INFO - Populating BetPawa betslip with selections
+2026-09-29 23:05:27,857 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:05:28,324 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:05:29,433 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:05:42,945 - odds_provider - INFO - Attempting to add selection 1/5: Inter Milan vs Empoli - Away Win @ 6.5
+2026-09-29 23:05:42,946 - odds_provider - INFO - Searching for: inter milan vs empoli, away win @ 6.5
+2026-09-29 23:05:44,871 - odds_provider - INFO - Attempting to add selection 2/5: AC Milan vs Verona - Away Win @ 6.0
+2026-09-29 23:05:44,871 - odds_provider - INFO - Searching for: ac milan vs verona, away win @ 6.0
+2026-09-29 23:05:47,620 - odds_provider - INFO - Attempting to add selection 3/5: Dortmund vs Mainz - Away Win @ 5.5
+2026-09-29 23:05:47,620 - odds_provider - INFO - Searching for: dortmund vs mainz, away win @ 5.5
+2026-09-29 23:05:50,225 - odds_provider - INFO - Attempting to add selection 4/5: Chelsea vs Fulham - Away Win @ 5.0
+2026-09-29 23:05:50,226 - odds_provider - INFO - Searching for: chelsea vs fulham, away win @ 5.0
+2026-09-29 23:05:52,256 - odds_provider - INFO - Attempting to add selection 5/5: Newcastle vs Bournemouth - Away Win @ 4.5
+2026-09-29 23:05:52,257 - odds_provider - INFO - Searching for: newcastle vs bournemouth, away win @ 4.5
+2026-09-29 23:05:54,248 - odds_provider - INFO - Successfully added 0/5 selections to betslip
+2026-09-29 23:05:54,248 - odds_provider - WARNING - Failed selections: 5
+2026-09-29 23:05:54,248 - odds_provider - WARNING -   - Inter Milan vs Empoli
+2026-09-29 23:05:54,248 - odds_provider - WARNING -   - AC Milan vs Verona
+2026-09-29 23:05:54,248 - odds_provider - WARNING -   - Dortmund vs Mainz
+2026-09-29 23:05:54,249 - odds_provider - WARNING -   - Chelsea vs Fulham
+2026-09-29 23:05:54,249 - odds_provider - WARNING -   - Newcastle vs Bournemouth
+2026-09-29 23:11:47,493 - __main__ - INFO - User cancelled the operation
+2026-09-29 23:12:08,396 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:12:08,397 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:12:09,077 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:12:09,606 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:12:27,006 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:12:27,061 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:12:27,062 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:12:27,292 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:12:27,665 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:12:27,666 - odds_provider - WARNING - Attempt 1: No fixtures extracted, retrying...
+2026-09-29 23:12:46,041 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:12:46,093 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:12:46,094 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:12:46,366 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:12:46,719 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:12:46,720 - odds_provider - WARNING - Attempt 2: No fixtures extracted, retrying...
+2026-09-29 23:13:05,129 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:13:05,175 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:13:05,176 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:13:05,457 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:13:05,819 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:13:05,820 - odds_provider - WARNING - Attempt 3: No fixtures extracted, retrying...
+2026-09-29 23:13:05,820 - odds_provider - ERROR - Failed to extract fixtures after all retries
+2026-09-29 23:18:24,154 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:18:24,155 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:18:24,846 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:18:25,316 - odds_provider - INFO - Navigating to: https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:18:42,397 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:18:42,438 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:18:42,439 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:18:42,630 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:18:42,979 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:18:42,979 - odds_provider - WARNING - Attempt 1: No fixtures extracted, retrying...
+2026-09-29 23:19:01,367 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:19:01,402 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:19:01,403 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:19:01,663 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:19:02,022 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:19:02,023 - odds_provider - WARNING - Attempt 2: No fixtures extracted, retrying...
+2026-09-29 23:19:20,348 - odds_provider - INFO - Trying improved extraction methods...
+2026-09-29 23:19:20,373 - odds_provider - INFO - Found 0 elements with 'vs' pattern
+2026-09-29 23:19:20,373 - odds_provider - INFO - Trying pattern-based extraction from page source...
+2026-09-29 23:19:20,587 - odds_provider - INFO - Trying direct text analysis...
+2026-09-29 23:19:20,943 - odds_provider - INFO - Final fixture count: 0
+2026-09-29 23:19:20,943 - odds_provider - WARNING - Attempt 3: No fixtures extracted, retrying...
+2026-09-29 23:19:20,944 - odds_provider - ERROR - Failed to extract fixtures after all retries
+2026-09-29 23:26:18,469 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:26:18,470 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:26:19,077 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:26:19,573 - odds_provider - INFO - Attempt 1: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:26:28,425 - odds_provider - INFO - Extracted 17 fixtures from BetPawa
+2026-09-29 23:26:30,664 - selector - INFO - Filtering 17 fixtures
+2026-09-29 23:26:30,665 - selector - INFO - Found 3 qualifying selections
+2026-09-29 23:26:30,668 - combinations - INFO - Pool: 3 selections | target odds >= 1000.00 | max legs 3
+2026-09-29 23:26:30,669 - combinations - WARNING - No combination reaches the payout target; returning best effort
+2026-09-29 23:26:51,462 - betpawa_interface - INFO - Preparing BetPawa for manual placement with Selenium
+2026-09-29 23:26:51,469 - odds_provider - INFO - Populating BetPawa betslip with selections
+2026-09-29 23:26:51,470 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:26:51,959 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:26:58,561 - odds_provider - INFO - Adding selection 1/3: Academia del Balompie Boliviano vs Football / Bolivia / Copa Division Profesional - Home Win @ 1.26
+2026-09-29 23:27:02,494 - odds_provider - INFO - Adding selection 2/3: China U23 vs Football / International / Asian Games - Home Win @ 1.23
+2026-09-29 23:27:06,296 - odds_provider - INFO - Adding selection 3/3: Football / Brazil / Brasileiro Serie B vs 1X2 | Full Time - Home Win @ 1.21
+2026-09-29 23:27:06,847 - odds_provider - WARNING - Could not add: Football / Brazil / Brasileiro Serie B vs 1X2 | Full Time - Home Win @ 1.21
+2026-09-29 23:27:06,847 - odds_provider - INFO - Added 2/3 selections to betslip
+2026-09-29 23:27:52,139 - betpawa_interface - INFO - User completed manual bet placement
+2026-09-29 23:31:08,527 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:31:08,528 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:31:09,095 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:31:09,601 - odds_provider - INFO - Attempt 1: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:31:23,411 - odds_provider - INFO - Scroll step 1: 18 fixtures so far
+2026-09-29 23:31:36,046 - odds_provider - INFO - Scrolling finished with 18 fixtures
+2026-09-29 23:31:36,046 - odds_provider - INFO - Extracted 18 fixtures from BetPawa
+2026-09-29 23:31:38,256 - selector - INFO - Filtering 18 fixtures
+2026-09-29 23:31:38,257 - selector - INFO - Found 4 qualifying selections
+2026-09-29 23:31:38,258 - combinations - INFO - Pool: 4 selections | target odds >= 1000.00 | max legs 4
+2026-09-29 23:31:38,259 - combinations - WARNING - No combination reaches the payout target; returning best effort
+2026-09-29 23:32:08,689 - betpawa_interface - INFO - Preparing BetPawa for manual placement with Selenium
+2026-09-29 23:32:08,696 - odds_provider - INFO - Populating BetPawa betslip with selections
+2026-09-29 23:32:08,696 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:32:09,148 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:32:15,724 - odds_provider - INFO - Adding selection 1/4: Academia del Balompie Boliviano vs Football / Bolivia / Copa Division Profesional - Home Win @ 1.25
+2026-09-29 23:32:19,594 - odds_provider - INFO - Adding selection 2/4: China U23 vs Football / International / Asian Games - Home Win @ 1.23
+2026-09-29 23:32:23,379 - odds_provider - INFO - Adding selection 3/4: Football / Brazil / Brasileiro Serie B vs 1X2 | Full Time - Home Win @ 1.21
+2026-09-29 23:34:20,200 - __main__ - INFO - User cancelled the operation
+2026-09-29 23:35:03,129 - odds_provider - INFO - Fetching odds from BetPawa for 1X2 market
+2026-09-29 23:35:03,130 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:35:04,685 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:35:05,755 - odds_provider - INFO - Attempt 1: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:35:21,387 - odds_provider - INFO - Scroll step 1: 18 fixtures so far
+2026-09-29 23:35:34,454 - odds_provider - INFO - Scrolling finished with 18 fixtures
+2026-09-29 23:35:34,455 - odds_provider - INFO - Extracted 18 fixtures from BetPawa
+2026-09-29 23:35:36,841 - selector - INFO - Filtering 18 fixtures
+2026-09-29 23:35:36,842 - selector - INFO - Found 6 qualifying selections
+2026-09-29 23:35:36,845 - combinations - INFO - Pool: 6 selections | target odds >= 2000.00 | max legs 6
+2026-09-29 23:35:36,847 - combinations - WARNING - No combination reaches the payout target; returning best effort
+2026-09-29 23:35:58,548 - betpawa_interface - INFO - Preparing BetPawa for manual placement with Selenium
+2026-09-29 23:35:58,554 - odds_provider - INFO - Populating BetPawa betslip with selections
+2026-09-29 23:35:58,555 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:35:59,545 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:36:14,018 - odds_provider - INFO - Adding selection 1/6: Colo-Colo vs Football / Chile / Copa Chile - Away Win @ 1.48
+2026-09-29 23:36:18,539 - odds_provider - INFO - Adding selection 2/6: Football / International / Int. Friendly Games vs 1X2 | Full Time - Home Win @ 1.47
+2026-09-29 23:40:25,454 - odds_provider - WARNING - Could not add: Football / International / Int. Friendly Games vs 1X2 | Full Time - Home Win @ 1.47
+2026-09-29 23:40:25,455 - odds_provider - INFO - Adding selection 3/6: Germany U19 vs Football / International / U19 Friendly Games - Away Win @ 1.45
+2026-09-29 23:40:30,298 - odds_provider - INFO - Adding selection 4/6: Cambodia vs Football / International / FIFA ASEAN Cup - Away Win @ 1.41
+2026-09-29 23:40:34,500 - odds_provider - INFO - Adding selection 5/6: Academia del Balompie Boliviano vs Football / Bolivia / Copa Division Profesional - Home Win @ 1.25
+2026-09-29 23:40:38,915 - odds_provider - INFO - Adding selection 6/6: China U23 vs Football / International / Asian Games - Home Win @ 1.23
+2026-09-29 23:40:43,264 - odds_provider - INFO - Added 5/6 selections to betslip
+2026-09-29 23:40:43,387 - betpawa_interface - INFO - User completed manual bet placement
+2026-09-29 23:41:27,236 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:41:28,820 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:41:29,812 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:41:38,724 - odds_provider - WARNING - Could not add Football / Brazil / Brasileiro Serie B vs 1X2 | Full Time
+2026-09-29 23:42:28,896 - selenium.webdriver.common.service - ERROR - Error terminating service process.
+Traceback (most recent call last):
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\common\service.py", line 164, in stop
+    if self.process.poll() is None:
+       ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1251, in poll
+    return self._internal_poll()
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1590, in _internal_poll
+    if _WaitForSingleObject(self._handle, 0) == _WAIT_OBJECT_0:
+       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+OSError: [WinError 6] The handle is invalid
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\common\service.py", line 180, in _terminate_process
+    if self.process.poll() is None:
+       ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1251, in poll
+    return self._internal_poll()
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1590, in _internal_poll
+    if _WaitForSingleObject(self._handle, 0) == _WAIT_OBJECT_0:
+       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+OSError: [WinError 6] The handle is invalid
+2026-09-29 23:48:06,292 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:48:07,731 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:48:08,820 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-29 23:48:20,591 - odds_provider - WARNING - Could not add AA Ponte Preta SP vs 1X2 | Full Time
+2026-09-29 23:48:37,661 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 4828)
+2026-09-29 23:48:54,727 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-29 23:49:06,842 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 12179)
+2026-09-29 23:49:34,609 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 19006)
+2026-09-29 23:49:56,414 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 22943)
+2026-09-29 23:49:58,233 - odds_provider - WARNING - Could not add Bolivia vs 1X2 | Full Time
+2026-09-29 23:50:10,800 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 28627)
+2026-09-29 23:50:17,453 - odds_provider - WARNING - Could not add Liechtenstein vs 1X2 | Full Time
+2026-09-29 23:50:30,227 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 32914)
+2026-09-29 23:50:32,458 - odds_provider - WARNING - Could not add Serbia vs 1X2 | Full Time
+2026-09-29 23:50:47,893 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 38423)
+2026-09-29 23:51:05,033 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 42535)
+2026-09-29 23:51:23,104 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 48568)
+2026-09-29 23:51:38,431 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 53903)
+2026-09-29 23:51:53,600 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 57840)
+2026-09-29 23:52:11,469 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 62826)
+2026-09-29 23:52:31,628 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 70875)
+2026-09-29 23:52:52,423 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 75336)
+2026-09-29 23:52:55,118 - odds_provider - WARNING - Could not add Aasane Fotball vs 1X2 | Full Time
+2026-09-29 23:53:07,443 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 80496)
+2026-09-29 23:53:24,977 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 85656)
+2026-09-29 23:53:39,837 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 91515)
+2026-09-29 23:53:42,513 - odds_provider - WARNING - Could not add Czechia vs 1X2 | Full Time
+2026-09-29 23:53:55,443 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 96326)
+2026-09-29 23:54:11,244 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 101835)
+2026-09-29 23:54:26,705 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 106820)
+2026-09-29 23:54:42,092 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 111107)
+2026-09-29 23:54:44,775 - odds_provider - WARNING - Could not add Charlton Athletic Women vs 1X2 | Full Time
+2026-09-29 23:55:04,115 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 115918)
+2026-09-29 23:55:07,013 - odds_provider - WARNING - Could not add AD Ceuta vs 1X2 | Full Time
+2026-09-29 23:55:19,611 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 121252)
+2026-09-29 23:55:35,632 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 127635)
+2026-09-29 23:55:51,532 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 133843)
+2026-09-29 23:56:07,581 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 140226)
+2026-09-29 23:56:26,677 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 145560)
+2026-09-29 23:56:29,819 - odds_provider - WARNING - Could not add Kasimpasa Istanbul vs 1X2 | Full Time
+2026-09-29 23:56:29,915 - odds_provider - WARNING - Could not add SC Heerenveen vs 1X2 | Full Time
+2026-09-29 23:56:42,377 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 151594)
+2026-09-29 23:56:58,373 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 156754)
+2026-09-29 23:59:47,668 - WDM - INFO - ====== WebDriver manager ======
+2026-09-29 23:59:49,193 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-29 23:59:50,276 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 00:00:01,519 - odds_provider - WARNING - Could not add AA Ponte Preta SP vs 1X2 | Full Time
+2026-09-30 00:00:03,746 - odds_provider - WARNING - Could not add Chile vs 1X2 | Full Time
+2026-09-30 00:00:03,777 - odds_provider - WARNING - Could not add Peru (n) vs 1X2 | Full Time
+2026-09-30 00:00:37,426 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-30 00:01:07,290 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 15592)
+2026-09-30 00:02:42,550 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 00:02:45,307 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-30 00:02:47,375 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-30 00:02:48,736 - WDM - INFO - WebDriver version 153.0.8010.52 selected
+2026-09-30 00:02:48,757 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/153.0.8010.52/win64/chromedriver-win64.zip
+2026-09-30 00:02:48,758 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/153.0.8010.52/win64/chromedriver-win64.zip
+2026-09-30 00:02:49,581 - WDM - INFO - Driver downloading response is 200
+2026-09-30 00:02:58,094 - WDM - INFO - Driver has been saved in cache [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52]
+2026-09-30 00:02:59,215 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 00:03:11,631 - odds_provider - WARNING - Could not add AA Ponte Preta SP vs 1X2 | Full Time
+2026-09-30 00:03:37,785 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-30 00:04:07,628 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 15592)
+2026-09-30 00:04:23,188 - odds_provider - WARNING - Could not add Los Chankas CYC vs 1X2 | Full Time
+2026-09-30 00:04:37,881 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 23118)
+2026-09-30 00:04:39,988 - odds_provider - WARNING - Could not add Bolivia vs 1X2 | Full Time
+2026-09-30 00:04:46,570 - odds_provider - WARNING - Could not add Liechtenstein vs 1X2 | Full Time
+2026-09-30 00:04:48,994 - odds_provider - WARNING - Could not add Gibraltar vs 1X2 | Full Time
+2026-09-30 00:04:49,045 - odds_provider - WARNING - Could not add Serbia vs 1X2 | Full Time
+2026-09-30 00:05:01,925 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 33438)
+2026-09-30 00:06:14,753 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 00:06:16,319 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\153.0.8010.52\chromedriver.exe] found in cache by browser version
+2026-09-30 00:06:17,427 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 00:06:29,723 - odds_provider - WARNING - Could not add AA Ponte Preta SP vs 1X2 | Full Time
+2026-09-30 00:06:29,761 - odds_provider - WARNING - Could not add Chile vs 1X2 | Full Time
+2026-09-30 00:06:29,797 - odds_provider - WARNING - Could not add Peru (n) vs 1X2 | Full Time
+2026-09-30 00:07:06,201 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-30 00:07:45,919 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 15592)
+2026-09-30 09:51:59,099 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 09:52:02,197 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-30 09:52:04,690 - WDM - INFO - There is no [win64] chromedriver "154.0.8037.92" for browser google-chrome "154.0.8037" in cache
+2026-09-30 09:52:05,934 - WDM - INFO - There is no [win64] chromedriver "154.0.8037.92" for browser google-chrome "154.0.8037" in cache
+2026-09-30 09:52:05,934 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-09-30 09:52:12,116 - WDM - INFO - WebDriver version 154.0.8037.92 selected
+2026-09-30 09:52:12,132 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.92/win64/chromedriver-win64.zip
+2026-09-30 09:52:12,133 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.92/win64/chromedriver-win64.zip
+2026-09-30 09:52:15,996 - WDM - INFO - Driver downloading response is 200
+2026-09-30 09:53:35,802 - WDM - INFO - Driver has been saved in cache [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92]
+2026-09-30 09:53:37,953 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 09:53:53,003 - odds_provider - ERROR - Could not find a 'Double Chance' market control on the page
+2026-09-30 09:53:53,438 - odds_provider - INFO - Saved debug files: debug\20260930_095353_double_chance_switch_failed.png / .txt / .html
+2026-09-30 09:53:53,733 - odds_provider - INFO - Saved debug files: debug\20260930_095353_live_end.png / .txt / .html
+2026-09-30 10:02:17,619 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 10:02:18,966 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 10:02:20,165 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 10:03:08,517 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 10:03:20,064 - odds_provider - INFO - Double Chance market is open
+2026-09-30 10:04:38,090 - odds_provider - INFO - Saved debug files: debug\20260930_100437_live_end.png / .txt / .html
+2026-09-30 10:09:23,607 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 10:09:25,793 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 10:09:26,860 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 10:09:40,131 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 10:09:50,711 - odds_provider - INFO - Double Chance market is open
+2026-09-30 10:11:07,784 - odds_provider - INFO - Saved debug files: debug\20260930_101107_live_end.png / .txt / .html
+2026-09-30 10:18:19,370 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 10:18:20,902 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 10:18:21,970 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 10:18:30,129 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 10:18:40,230 - odds_provider - INFO - Double Chance market is open
+2026-09-30 10:19:51,999 - odds_provider - INFO - Saved debug files: debug\20260930_101951_live_end.png / .txt / .html
+2026-09-30 10:20:40,750 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 10:20:42,069 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 10:20:43,073 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 10:21:05,811 - odds_provider - WARNING - Could not add Sarpsborg 08 vs 1X2 | Full Time
+2026-09-30 10:21:18,498 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 8416)
+2026-09-30 10:21:27,626 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-30 10:21:53,545 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 16116)
+2026-09-30 10:22:19,171 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 23642)
+2026-09-30 10:22:21,407 - odds_provider - WARNING - Could not add Bolivia vs 1X2 | Full Time
+2026-09-30 10:22:33,658 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 29500)
+2026-09-30 10:22:50,770 - odds_provider - WARNING - Could not add Liechtenstein vs 1X2 | Full Time
+2026-09-30 10:22:55,082 - odds_provider - WARNING - Could not add Serbia vs 1X2 | Full Time
+2026-09-30 10:23:07,925 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 41312)
+2026-09-30 10:23:38,623 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 50060)
+2026-09-30 10:23:56,303 - odds_provider - INFO - Scroll step: nothing after first wait; nudge loaded more (height 56268)
+2026-09-30 10:24:09,380 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 61603)
+2026-09-30 10:24:24,797 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 65540)
+2026-09-30 10:24:42,888 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 70526)
+2026-09-30 10:25:03,756 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 78575)
+2026-09-30 10:25:13,561 - odds_provider - INFO - Saved debug files: debug\20260930_102512_live_end.png / .txt / .html
+2026-09-30 10:42:08,502 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 10:42:09,948 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 10:42:10,973 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 10:42:35,120 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 4304)
+2026-09-30 10:42:51,704 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 8416)
+2026-09-30 10:42:53,884 - odds_provider - WARNING - Could not add South Africa vs 1X2 | Full Time
+2026-09-30 10:43:07,023 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 12528)
+2026-09-30 10:43:21,251 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 16116)
+2026-09-30 10:43:35,565 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 19530)
+2026-09-30 10:43:49,937 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 23471)
+2026-09-30 10:44:04,790 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 28635)
+2026-09-30 10:44:18,945 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 32402)
+2026-09-30 10:44:33,791 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 35819)
+2026-09-30 10:44:48,623 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 39411)
+2026-09-30 10:44:51,094 - odds_provider - WARNING - Could not add Serbia vs 1X2 | Full Time
+2026-09-30 10:45:06,935 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 44400)
+2026-09-30 10:45:24,394 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 48691)
+2026-09-30 10:45:39,811 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 53506)
+2026-09-30 10:45:54,666 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 59543)
+2026-09-30 10:46:09,191 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 63834)
+2026-09-30 10:46:24,759 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 67426)
+2026-09-30 10:46:44,414 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 71891)
+2026-09-30 10:47:04,812 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 75483)
+2026-09-30 10:47:21,103 - odds_provider - INFO - Scroll step: nothing after first wait; nudge loaded more (height 79603)
+2026-09-30 10:47:38,822 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 83548)
+2026-09-30 10:47:54,166 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 88192)
+2026-09-30 10:48:19,658 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 97484)
+2026-09-30 10:48:35,479 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 102478)
+2026-09-30 10:48:51,360 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 107296)
+2026-09-30 10:49:07,008 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 112290)
+2026-09-30 10:49:22,884 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 116410)
+2026-09-30 10:49:37,779 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 120355)
+2026-09-30 10:49:53,444 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 124650)
+2026-09-30 10:49:57,040 - odds_provider - WARNING - Could not add AD Ceuta vs 1X2 | Full Time
+2026-09-30 10:50:09,785 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 128944)
+2026-09-30 10:50:26,348 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 134636)
+2026-09-30 10:50:42,622 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 140499)
+2026-09-30 10:50:58,950 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 146536)
+2026-09-30 10:51:15,760 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 152050)
+2026-09-30 10:51:35,522 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 157214)
+2026-09-30 10:51:38,444 - odds_provider - WARNING - Could not add SC Heerenveen vs 1X2 | Full Time
+2026-09-30 10:51:50,642 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 163426)
+2026-09-30 10:52:07,977 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 168020)
+2026-09-30 10:52:27,176 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 173534)
+2026-09-30 10:52:42,730 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 179392)
+2026-09-30 10:52:46,556 - odds_provider - WARNING - Could not add Bayern Munich vs 1X2 | Full Time
+2026-09-30 10:52:59,348 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 185600)
+2026-09-30 10:53:15,534 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 190016)
+2026-09-30 10:53:32,000 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 194827)
+2026-09-30 10:53:48,270 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 200162)
+2026-09-30 10:54:04,832 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 206370)
+2026-09-30 10:54:21,433 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 211530)
+2026-09-30 10:54:38,081 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 216340)
+2026-09-30 10:54:54,596 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 222374)
+2026-09-30 10:55:13,447 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 227883)
+2026-09-30 10:55:30,306 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 233742)
+2026-09-30 10:55:46,926 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 239255)
+2026-09-30 10:56:04,226 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 243200)
+2026-09-30 10:56:28,653 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 246447)
+2026-09-30 10:56:48,117 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 250916)
+2026-09-30 10:57:03,419 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 250948)
+2026-09-30 10:57:20,973 - odds_provider - INFO - Scroll step: nothing after first wait; nudge loaded more (height 250948)
+2026-09-30 10:57:36,708 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 256259)
+2026-09-30 10:58:01,601 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 260728)
+2026-09-30 10:58:23,672 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 266071)
+2026-09-30 10:58:30,190 - odds_provider - WARNING - Could not add FC Thun vs 1X2 | Full Time
+2026-09-30 10:58:44,001 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 272112)
+2026-09-30 10:59:02,074 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 278154)
+2026-09-30 10:59:21,961 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 282623)
+2026-09-30 10:59:30,210 - odds_provider - WARNING - Could not add Ipswich Town vs 1X2 | Full Time
+2026-09-30 10:59:43,594 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 287791)
+2026-09-30 11:00:03,458 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 293483)
+2026-09-30 11:00:45,118 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 304343)
+2026-09-30 11:01:02,640 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 308288)
+2026-09-30 11:01:19,409 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 311039)
+2026-09-30 11:01:32,395 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 311039)
+2026-09-30 11:01:35,073 - odds_provider - INFO - 1X2 phase finished: 1154 matches checked, 7 legs in slip
+2026-09-30 11:01:37,067 - odds_provider - INFO - Saved debug files: debug\20260930_110135_live_end.png / .txt / .html
+2026-09-30 11:30:43,447 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 11:30:45,020 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 11:30:46,164 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 11:30:54,876 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 11:31:05,747 - odds_provider - INFO - Double Chance market is open
+2026-09-30 11:32:46,108 - odds_provider - INFO - Saved debug files: debug\20260930_113245_live_end.png / .txt / .html
+2026-09-30 18:15:09,334 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 18:15:11,142 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 18:15:13,093 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 18:15:29,298 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 18:15:39,653 - odds_provider - INFO - Double Chance market is open
+2026-09-30 18:15:40,868 - odds_provider - WARNING - Odds changed for Poland U21 vs Sweden U21: expected 1.14, page shows . Skipping to be safe.
+2026-09-30 18:15:40,869 - odds_provider - WARNING - Could not add Poland U21 vs Sweden U21
+2026-09-30 18:16:38,859 - odds_provider - INFO - Saved debug files: debug\20260930_181638_live_end.png / .txt / .html
+2026-09-30 18:31:32,005 - __main__ - INFO - User cancelled the operation
+2026-09-30 18:32:17,474 - chrome_launcher - INFO - Launching Chrome: C:\Program Files\Google\Chrome\Application\chrome.exe (profile: D:\Code\scrapping-tool-\PlaceBet\chrome_profile, port 9222)
+2026-09-30 18:32:18,272 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 18:32:20,095 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 18:32:23,142 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 18:32:23,146 - odds_provider - ERROR - Live build error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=154.0.8037.58)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff756119d55+5a55]
+	chromedriver!(No symbol) [0x7ff75603f540]
+	chromedriver!(No symbol) [0x7ff755e645fd]
+	chromedriver!(No symbol) [0x7ff755e3b5d2]
+	chromedriver!(No symbol) [0x7ff755ef07f6]
+	chromedriver!(No symbol) [0x7ff755f0f5bd]
+	chromedriver!(No symbol) [0x7ff755eb1a12]
+	chromedriver!(No symbol) [0x7ff755eb2823]
+	chromedriver!GetHandleVerifier [0x7ff7565304b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff75655e26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff75655274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff7562132fe+feffe]
+	chromedriver!(No symbol) [0x7ff75604cb55]
+	chromedriver!(No symbol) [0x7ff756047f64]
+	chromedriver!(No symbol) [0x7ff7560480f4]
+	chromedriver!(No symbol) [0x7ff756032e4c]
+	KERNEL32!BaseThreadInitThunk [0x7ffecd16257d+1d]
+	ntdll!RtlUserThreadStart [0x7ffecedcaf08+28]
+Traceback (most recent call last):
+  File "D:\Code\scrapping-tool-\PlaceBet\odds_provider.py", line 694, in build_betslip_live
+    self.driver.get(url)
+    ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 526, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sabir\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=154.0.8037.58)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff756119d55+5a55]
+	chromedriver!(No symbol) [0x7ff75603f540]
+	chromedriver!(No symbol) [0x7ff755e645fd]
+	chromedriver!(No symbol) [0x7ff755e3b5d2]
+	chromedriver!(No symbol) [0x7ff755ef07f6]
+	chromedriver!(No symbol) [0x7ff755f0f5bd]
+	chromedriver!(No symbol) [0x7ff755eb1a12]
+	chromedriver!(No symbol) [0x7ff755eb2823]
+	chromedriver!GetHandleVerifier [0x7ff7565304b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff75655e26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff75655274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff7562132fe+feffe]
+	chromedriver!(No symbol) [0x7ff75604cb55]
+	chromedriver!(No symbol) [0x7ff756047f64]
+	chromedriver!(No symbol) [0x7ff7560480f4]
+	chromedriver!(No symbol) [0x7ff756032e4c]
+	KERNEL32!BaseThreadInitThunk [0x7ffecd16257d+1d]
+	ntdll!RtlUserThreadStart [0x7ffecedcaf08+28]
+
+2026-09-30 18:32:45,204 - __main__ - INFO - User cancelled the operation
+2026-09-30 18:33:51,179 - WDM - INFO - ====== WebDriver manager ======
+2026-09-30 18:33:52,679 - WDM - INFO - Driver [C:\Users\Sabir\.wdm\drivers\chromedriver\win64\154.0.8037.92\chromedriver-win64/chromedriver.exe] found in cache by browser version
+2026-09-30 18:33:53,686 - odds_provider - INFO - Live build: navigating to https://www.betpawa.ug/upcoming?marketId=_1X2&categoryId=2
+2026-09-30 18:34:02,178 - odds_provider - INFO - Opening Double Chance page: https://www.betpawa.ug/events?categoryId=2&marketId=Double%20Chance
+2026-09-30 18:34:13,356 - odds_provider - INFO - Double Chance market is open
+2026-09-30 18:34:37,502 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 7478)
+2026-09-30 18:34:54,520 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 10891)
+2026-09-30 18:35:17,623 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 14304)
+2026-09-30 18:35:34,920 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 17718)
+2026-09-30 18:35:58,204 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 21131)
+2026-09-30 18:36:10,529 - odds_provider - INFO - Scroll step: nothing after first wait; nudge found nothing new (height 21131)
+2026-09-30 18:36:25,366 - odds_provider - INFO - Saved debug files: debug\20260930_183624_live_end.png / .txt / .html
